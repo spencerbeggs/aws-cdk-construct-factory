@@ -2,11 +2,19 @@
   "name": "aws-cdk-construct-factory",
   "version": "0.0.0",
   "description": "A bootstrap-able GitHub template for developing, testing and publishing AWS CDK constructs with a Node.js cli.",
-  "repository": "git@github.com:spencerbeggs/aws-cdk-construct-factory.git",
-  "author": "C. Spencer Beggs <spencer@beg.gs>",
-  "license": "MIT",
+  "author": {
+    "name": "C. Spencer Beggs",
+    "email": "spencer@beg.gs",
+    "url": "https://github.com/spencerbeggs",
+    "organization": false
+  },
+  "repository": {
+    "url": "https://github.com/spencerbeggs/aws-cdk-construct-factory.git",
+    "type": "git"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "license": "MIT",
   "scripts": {
     "build": "jsii",
     "build:watch": "jsii -w",
@@ -16,19 +24,19 @@
     "outdir": "dist",
     "targets": {
       "python": {
-        "distName": "acme.hello-jsii",
-        "module": "acme.hello_jsii"
+        "distName": "aws-cdk-construct-factory",
+        "module": "aws-cdk-construct-factory"
       },
       "java": {
-        "package": "com.acme.hello",
+        "package": "spencerbeggs.aws-cdk-construct-factory",
         "maven": {
-          "groupId": "com.acme.hello",
-          "artifactId": "hello-jsii"
+          "groupId": "spencerbeggs",
+          "artifactId": "aws-cdk-construct-factory"
         }
       },
       "dotnet": {
-        "namespace": "Acme.HelloNamespace",
-        "packageId": "Acme.HelloPackage"
+        "namespace": "spencerbeggs",
+        "packageId": "aws-cdk-construct-factory"
       }
     }
   },
