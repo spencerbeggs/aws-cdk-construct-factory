@@ -5,3 +5,6 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: spencerbeggs/aws-jsii-action@test2
+            - run: npm build
+            - run: npm package
+            - run: ls
