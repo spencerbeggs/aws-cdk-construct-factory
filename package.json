@@ -4,5 +4,36 @@
   "description": "A bootstrap-able GitHub template for developing, testing and publishing AWS CDK constructs with a Node.js cli.",
   "repository": "git@github.com:spencerbeggs/aws-cdk-construct-factory.git",
   "author": "C. Spencer Beggs <spencer@beg.gs>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "jsii",
+    "build:watch": "jsii -w",
+    "package": "jsii-pacmak"
+  },
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "acme.hello-jsii",
+        "module": "acme.hello_jsii"
+      },
+      "java": {
+        "package": "com.acme.hello",
+        "maven": {
+          "groupId": "com.acme.hello",
+          "artifactId": "hello-jsii"
+        }
+      },
+      "dotnet": {
+        "namespace": "Acme.HelloNamespace",
+        "packageId": "Acme.HelloPackage"
+      }
+    }
+  },
+  "devDependencies": {
+    "jsii": "^1.2.0",
+    "jsii-pacmak": "^1.2.0"
+  }
 }
