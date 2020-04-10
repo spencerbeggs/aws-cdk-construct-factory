@@ -4,7 +4,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: spencerbeggs/aws-jsii-action@test2
+            - uses: spencerbeggs/aws-jsii-action@test3
             - run: npm install
             - run: npm run build
             - run: npm run package
