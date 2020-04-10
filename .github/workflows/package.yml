@@ -4,4 +4,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: spencerbeggs/aws-jsii-action@test
+            - uses: spencerbeggs/aws-jsii-action@test2
