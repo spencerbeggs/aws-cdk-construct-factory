@@ -1,7 +1,10 @@
 on: push
 jobs:
-    build:
+    jsii:
         runs-on: ubuntu-latest
+        name: "Packages code with aws-jsii"
         steps:
-            - uses: actions/checkout@v2
-            - uses: spencerbeggs/aws-jsii-action@test4
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: package
+              uses: spencerbeggs/aws-jsii-action@v6
