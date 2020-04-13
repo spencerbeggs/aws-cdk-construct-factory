@@ -1,15 +1,15 @@
 on: push
 jobs:
-    jsii:
-        runs-on: ubuntu-latest
-        name: "Packages code with aws-jsii"
-        steps:
-            - name: checkout
-              uses: actions/checkout@v2
-            - name: package
-              uses: spencerbeggs/aws-jsii-action@test18
-            - name: artifacts
-              uses: actions/upload-artifact@v1
-              with:
-                  name: dist
-                  path: dist
+  jsii:
+    runs-on: ubuntu-latest
+    name: "Packages code with aws-jsii"
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: package
+        uses: spencerbeggs/aws-jsii-action@test19
+      - name: artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: dist
+          path: dist
