@@ -7,9 +7,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: package
-        uses: spencerbeggs/aws-jsii-action@test20
+        uses: spencerbeggs/aws-jsii-action@test22
       - name: artifacts
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2-preview
         with:
-          name: dist
-          path: dist
+          path: dist/**
