@@ -8,11 +8,3 @@ jobs:
         uses: actions/checkout@v2
       - name: package
         uses: spencerbeggs/aws-jsii-action@test26
-      - name: artifacts
-        uses: actions/upload-artifact@v2-preview
-        with:
-          path: |
-            dist/js
-            dist/python
-            dist/dotnet
-            dist/java
