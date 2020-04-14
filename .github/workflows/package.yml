@@ -7,4 +7,4 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: package
-        uses: spencerbeggs/aws-jsii-action@test34
+        uses: spencerbeggs/aws-jsii-action@test35
