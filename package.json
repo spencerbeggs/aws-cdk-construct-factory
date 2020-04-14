@@ -28,7 +28,7 @@
         "module": "aws-cdk-construct-factory"
       },
       "java": {
-        "package": "spencerbeggs.aws-cdk-construct-factory",
+        "package": "spencerbeggs.aws_cdk_construct_factory",
         "maven": {
           "groupId": "spencerbeggs",
           "artifactId": "aws-cdk-construct-factory"
