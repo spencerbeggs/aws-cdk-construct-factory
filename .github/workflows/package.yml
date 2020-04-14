@@ -11,4 +11,8 @@ jobs:
       - name: artifacts
         uses: actions/upload-artifact@v2-preview
         with:
-          path: dist/**
+          path: |
+            dist/js
+            dist/python
+            dist/dotnet
+            dist/java
